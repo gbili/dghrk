@@ -17,6 +17,8 @@ return array(
             'orm_default' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOPgSql\Driver',
                 'params'      => array(
+                    'user'     => 'oudlocxesgtsqr',
+                    'password'     => 'lnUcwb9Ez8Sx3IRAGklWeLAcC6',
                     'host'     => 'ec2-54-204-31-33.compute-1.amazonaws.com',
                     'port'     => '5432',
                     'dbname'   => 'd3isin4tk4orri',
