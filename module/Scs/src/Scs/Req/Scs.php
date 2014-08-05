@@ -42,11 +42,6 @@ class Scs extends \Gbili\Db\Req\AbstractReq
                 . ' LEFT JOIN gbilimem__files AS f ON m.file_id = f.id '  . "\n";
     }
 
-    public function getTrailingSql()
-    {
-        return ' GROUP BY p.id';
-    }
-
     public function getPostsWithLevel1Category(array $criteria = array())
     {
         $this->addKeyedField('parent_post_count', 'count(parent_p.id)');
@@ -57,7 +52,7 @@ class Scs extends \Gbili\Db\Req\AbstractReq
         $this->addKeyedField('child_post_slug', 'child_p.slug');
         $this->addKeyedField('child_post_category_slug', 'child_p.category_slug'); 
 
-        return $this->getResultSetByCriteria($this->getBaseSqlString(), $criteria, $this->getTrailingSql());
+        return $this->getResultSetByCriteria($this->getBaseSqlString(), $criteria);
     }
 
     public function getPostsByLocaleInCategoriesLikeQuery($locale, array $allowedCategories, $query=null)

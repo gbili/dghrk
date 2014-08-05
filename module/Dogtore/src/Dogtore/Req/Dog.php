@@ -19,7 +19,7 @@ class Dog extends \Gbili\Db\Req\AbstractReq
             'dog_whythisdog' => 'd.whythisdog',
 
             'media_alt' => 'mm.alt',
-            'media_src' => 'concat(m.publicdir, "/", m.slug)',
+            'media_src' => "m.publicdir || '/' || m.slug",
         );
     }
 
@@ -33,13 +33,8 @@ class Dog extends \Gbili\Db\Req\AbstractReq
                 . ' LEFT JOIN gbilimem__media_metadatas AS mm ON m.id = mm.media_id ';
     }
 
-    public function getTrailingSql()
-    {
-        return ' GROUP BY d.id';
-    }
-
     public function getDogs(array $criteria = array())
     {
-        return $this->getResultSetByCriteria($this->getBaseSqlString(), $criteria, $this->getTrailingSql());
+        return $this->getResultSetByCriteria($this->getBaseSqlString(), $criteria);
     }
 }

@@ -1110,12 +1110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gbili/gfw.git",
-                "reference": "b46c1989b85720fe9aab53157373e7fa51159d6a"
+                "reference": "a34ddd2ba759707596ebed34b1ce05c923ad606b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gbili/gfw/zipball/b46c1989b85720fe9aab53157373e7fa51159d6a",
-                "reference": "b46c1989b85720fe9aab53157373e7fa51159d6a",
+                "url": "https://api.github.com/repos/gbili/gfw/zipball/a34ddd2ba759707596ebed34b1ce05c923ad606b",
+                "reference": "a34ddd2ba759707596ebed34b1ce05c923ad606b",
                 "shasum": ""
             },
             "require": {
@@ -1169,7 +1169,7 @@
                 "source": "https://github.com/gbili/gfw/tree/master",
                 "issues": "https://github.com/gbili/gfw/issues"
             },
-            "time": "2014-04-16 09:54:50"
+            "time": "2014-08-05 11:50:03"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1375,12 +1375,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "14ca69d54ac0ac83bbf89188fef22485ff8d933b"
+                "reference": "7f54fb02d2a7eebf2ddd4b3970673dd29b9648f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/14ca69d54ac0ac83bbf89188fef22485ff8d933b",
-                "reference": "14ca69d54ac0ac83bbf89188fef22485ff8d933b",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/7f54fb02d2a7eebf2ddd4b3970673dd29b9648f4",
+                "reference": "7f54fb02d2a7eebf2ddd4b3970673dd29b9648f4",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1485,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-07-28 09:54:37"
+            "time": "2014-08-04 17:35:43"
         },
         {
             "name": "zendframework/zendxml",

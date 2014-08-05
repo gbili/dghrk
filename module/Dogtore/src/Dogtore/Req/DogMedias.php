@@ -10,7 +10,7 @@ class DogMedias extends \Gbili\Db\Req\AbstractReq
             'dog_name' => 'd.name',
             'media_alt' => 'mm.alt',
             'media_slug' => 'm.slug',
-            'media_src' => 'concat(m.publicdir, "/", m.slug)',
+            'media_src' => "m.publicdir || '/' || m.slug)",
         );
     }
 
@@ -26,8 +26,7 @@ class DogMedias extends \Gbili\Db\Req\AbstractReq
 
     public function getTrailingSql()
     {
-        return ' GROUP BY m.id'
-            . ' ORDER BY m.date DESC';
+        return ' ORDER BY m.date DESC';
     }
 
     public function getMedias(array $criteria = array())
