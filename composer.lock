@@ -1110,12 +1110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gbili/gfw.git",
-                "reference": "02e9b9eb889f49cd64e0259885864a9d48d33807"
+                "reference": "8a918d26a6ad48ed33d629d1391a0cd72b40d778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gbili/gfw/zipball/02e9b9eb889f49cd64e0259885864a9d48d33807",
-                "reference": "02e9b9eb889f49cd64e0259885864a9d48d33807",
+                "url": "https://api.github.com/repos/gbili/gfw/zipball/8a918d26a6ad48ed33d629d1391a0cd72b40d778",
+                "reference": "8a918d26a6ad48ed33d629d1391a0cd72b40d778",
                 "shasum": ""
             },
             "require": {
@@ -1169,7 +1169,7 @@
                 "source": "https://github.com/gbili/gfw/tree/master",
                 "issues": "https://github.com/gbili/gfw/issues"
             },
-            "time": "2014-08-05 12:17:26"
+            "time": "2014-08-05 12:46:52"
         },
         {
             "name": "gedmo/doctrine-extensions",
