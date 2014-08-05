@@ -15,7 +15,7 @@ class Scs extends \Gbili\Db\Req\AbstractReq
                 'post_date' => 'pd.date',
                 'post_locale' => 'p.locale',
 
-                'media_src' => 'concat(m.publicdir, "/", m.slug)',
+                'media_src' => 'm.publicdir || "/" || m.slug',
 
                 'file_dirpath' => 'f.dirpath',
                 'file_basename' => 'f.basename',
