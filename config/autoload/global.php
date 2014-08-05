@@ -10,7 +10,6 @@
  * control, so do not include passwords or other sensitive information in this
  * file.
  */
-
 return array(
     'doctrine' => array(
         'connection' => array(
@@ -18,7 +17,7 @@ return array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOPgSql\Driver',
                 'params'      => array(
                     'user'     => 'oudlocxesgtsqr',
-                    'password'     => 'lnUcwb9Ez8Sx3IRAGklWeLAcC6',
+                    'password' => 'lnUcwb9Ez8Sx3IRAGklWeLAcC6',
                     'host'     => 'ec2-54-204-31-33.compute-1.amazonaws.com',
                     'port'     => '5432',
                     'dbname'   => 'd3isin4tk4orri',
@@ -26,6 +25,8 @@ return array(
             ),
         ),
     ),
+);
+
 /*    Charset not working, using Doctrine PDOConnection instead
  *    'gbili' => array(
         'db_req' => array(
@@ -42,4 +43,3 @@ return array(
                     => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
     ),*/
-);

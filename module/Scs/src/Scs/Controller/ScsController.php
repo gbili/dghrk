@@ -28,7 +28,7 @@ class ScsController extends \Zend\Mvc\Controller\AbstractActionController
     {
         $form = $this->getSearchFormCopy();
 
-        $posts = $this->getDoggies();
+        $posts = $this->getScss();
 
         if (empty($posts)) {
             $messages = array('warning' => $this->messages[self::MESSAGE_NO_POSTS_IN_LANGUAGE]);
@@ -105,11 +105,11 @@ class ScsController extends \Zend\Mvc\Controller\AbstractActionController
             $form->setData($this->request->getQuery());
             if ($form->isValid()) {
                 $formValidData = $form->getData();
-                $posts = $this->getDoggies((($form->hasCategory())? $formValidData['c'] : null), (($form->hasTerms())? $formValidData['t'] : null)); 
+                $posts = $this->getScss((($form->hasCategory())? $formValidData['c'] : null), (($form->hasTerms())? $formValidData['t'] : null)); 
             }
         }
         if (!isset($posts)) {
-            $posts = $this->getDoggies(); 
+            $posts = $this->getScss(); 
         }
 
         if (empty($posts)) {
@@ -123,7 +123,7 @@ class ScsController extends \Zend\Mvc\Controller\AbstractActionController
         return new \Zend\View\Model\ViewModel(compact($viewVars));
     }
 
-    protected function getDoggies($categorySlug = null, $termPhrase = null)
+    protected function getScss($categorySlug = null, $termPhrase = null)
     {
         $req = new \Scs\Req\Scs();
         $conditions = [];
